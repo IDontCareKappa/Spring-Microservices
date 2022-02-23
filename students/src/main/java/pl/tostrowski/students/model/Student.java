@@ -2,25 +2,27 @@ package pl.tostrowski.students.model;
 
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
+import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
+@SequenceGenerator(name = "seqIdGen", initialValue = 20000, allocationSize = 1)
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqIdGen")
     private Long id;
 
-    @NotNull(message = "Pole imie nie moze byc puste")
+    @NotBlank
     private String firstName;
-    @NotNull(message = "Pole nazwisko nie moze byc puste")
+
+    @NotEmpty
+    @Size(min = 3)
     private String lastName;
+
+    @NotBlank
     @Email
+    @Column(unique = true)
     private String email;
 
     public Long getId() {

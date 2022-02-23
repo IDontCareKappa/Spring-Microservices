@@ -10,10 +10,12 @@
         <module name="students" />
         <module name="receiver" />
         <module name="eureka" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="publisher" target="1.8" />
       <module name="receiver" target="1.8" />
       <module name="students" target="1.8" />
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="publisher" options="-parameters" />
       <module name="receiver" options="-parameters" />
       <module name="students" options="-parameters" />
