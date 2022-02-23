@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Microservices.iml" filepath="$PROJECT_DIR$/.idea/Spring-Microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publisher/publisher.iml" filepath="$PROJECT_DIR$/publisher/publisher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/receiver/receiver.iml" filepath="$PROJECT_DIR$/receiver/receiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/students/students.iml" filepath="$PROJECT_DIR$/students/students.iml" />
+    </modules>
+  </component>
+</project>
